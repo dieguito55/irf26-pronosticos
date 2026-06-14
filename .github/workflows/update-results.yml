@@ -1,0 +1,62 @@
+name: Actualizar resultados
+
+on:
+  schedule:
+    - cron: "35 0 * * *"
+      timezone: "America/Lima"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: update-results
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v6
+
+      - name: Configurar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Validar datos actuales
+        run: python scripts/validate_data.py
+
+      - name: Actualizar resultados y ranking
+        env:
+          FOOTBALL_API_URL: ${{ vars.FOOTBALL_API_URL }}
+          FOOTBALL_API_TOKEN: ${{ secrets.FOOTBALL_API_TOKEN }}
+          COMPETITION_ID: ${{ vars.COMPETITION_ID }}
+          SEASON: "2026"
+        run: python scripts/update_results.py
+
+      - name: Validar JSON generados
+        run: python scripts/validate_data.py
+
+      - name: Guardar cambios
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/standings.json public/data/ranking.json public/data/tournament.json
+          if git diff --cached --quiet; then
+            echo "No hay cambios para publicar."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore: actualizar resultados y ranking"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publicar datos actualizados
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main

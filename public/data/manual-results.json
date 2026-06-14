@@ -1,0 +1,75 @@
+{
+  "description": "Fallback manual para resultados finalizados de fase de grupos cuando la API aun no devuelve datos validos.",
+  "matches": [
+    {
+      "group": "A",
+      "homeTeam": "México",
+      "awayTeam": "Sudáfrica",
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "finished",
+      "stage": "group",
+      "round": 1
+    },
+    {
+      "group": "A",
+      "homeTeam": "República de Corea",
+      "awayTeam": "República Checa",
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "finished",
+      "stage": "group",
+      "round": 1
+    },
+    {
+      "group": "B",
+      "homeTeam": "Canadá",
+      "awayTeam": "Bosnia y Herzegovina",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "finished",
+      "stage": "group",
+      "round": 1
+    },
+    {
+      "group": "D",
+      "homeTeam": "Estados Unidos",
+      "awayTeam": "Paraguay",
+      "homeScore": 4,
+      "awayScore": 1,
+      "status": "finished",
+      "stage": "group",
+      "round": 1
+    },
+    {
+      "group": "B",
+      "homeTeam": "Qatar",
+      "awayTeam": "Suiza",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "finished",
+      "stage": "group",
+      "round": 1
+    },
+    {
+      "group": "C",
+      "homeTeam": "Brasil",
+      "awayTeam": "Marruecos",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "finished",
+      "stage": "group",
+      "round": 1
+    },
+    {
+      "group": "C",
+      "homeTeam": "Escocia",
+      "awayTeam": "Haití",
+      "homeScore": 1,
+      "awayScore": 0,
+      "status": "finished",
+      "stage": "group",
+      "round": 1
+    }
+  ]
+}

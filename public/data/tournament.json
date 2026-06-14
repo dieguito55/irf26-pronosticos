@@ -1,0 +1,56 @@
+{
+  "name": "Polla Mundialista IRF26",
+  "competition": "Mundial 2026",
+  "phase": "Fase de grupos",
+  "status": "in_progress",
+  "currentRound": 1,
+  "totalRounds": 3,
+  "processedMatches": 7,
+  "totalMatches": 72,
+  "participants": 10,
+  "groups": 12,
+  "maxPoints": 24,
+  "lastUpdated": "2026-06-13T23:37:23.008815-05:00",
+  "lastSuccessfulUpdate": "2026-06-13T23:37:23.008815-05:00",
+  "nextUpdate": "2026-06-15T00:35:00-05:00",
+  "updateStatus": "updated",
+  "rounds": [
+    {
+      "id": 1,
+      "name": "Ronda 1",
+      "description": "Primer encuentro de cada selección.",
+      "status": "in_progress",
+      "startsAt": "2026-06-11",
+      "endsAt": "2026-06-17",
+      "processedMatches": 7,
+      "totalMatches": 24
+    },
+    {
+      "id": 2,
+      "name": "Ronda 2",
+      "description": "Segundo encuentro de cada selección.",
+      "status": "pending",
+      "startsAt": "2026-06-18",
+      "endsAt": "2026-06-24",
+      "processedMatches": 0,
+      "totalMatches": 24
+    },
+    {
+      "id": 3,
+      "name": "Ronda 3",
+      "description": "Último encuentro de cada selección. Al terminar se define el resultado final.",
+      "status": "pending",
+      "startsAt": "2026-06-25",
+      "endsAt": "2026-06-27",
+      "processedMatches": 0,
+      "totalMatches": 24
+    }
+  ],
+  "messages": {
+    "beforeStart": "Los resultados estarán disponibles cuando comiencen los partidos.",
+    "inProgress": "Clasificación provisional.",
+    "updateError": "No se pudo obtener una nueva actualización. Se muestran los últimos datos confirmados.",
+    "finished": "Resultados definitivos de la fase de grupos.",
+    "empty": "Aún no hay datos confirmados para mostrar."
+  }
+}

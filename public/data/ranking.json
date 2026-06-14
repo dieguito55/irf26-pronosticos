@@ -1,0 +1,106 @@
+{
+  "lastUpdated": "2026-06-14T01:40:49.757426-05:00",
+  "status": "provisional",
+  "entries": [
+    {
+      "participantId": "P01",
+      "totalPoints": 6,
+      "hits": 6,
+      "perfectGroups": 2,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-14T01:40:49.757426-05:00",
+      "position": 1
+    },
+    {
+      "participantId": "P10",
+      "totalPoints": 6,
+      "hits": 6,
+      "perfectGroups": 2,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-14T01:40:49.757426-05:00",
+      "position": 1
+    },
+    {
+      "participantId": "P07",
+      "totalPoints": 5,
+      "hits": 5,
+      "perfectGroups": 2,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-14T01:40:49.757426-05:00",
+      "position": 3
+    },
+    {
+      "participantId": "P02",
+      "totalPoints": 5,
+      "hits": 5,
+      "perfectGroups": 1,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-14T01:40:49.757426-05:00",
+      "position": 3
+    },
+    {
+      "participantId": "P03",
+      "totalPoints": 5,
+      "hits": 5,
+      "perfectGroups": 1,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-14T01:40:49.757426-05:00",
+      "position": 3
+    },
+    {
+      "participantId": "P09",
+      "totalPoints": 5,
+      "hits": 5,
+      "perfectGroups": 1,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-14T01:40:49.757426-05:00",
+      "position": 3
+    },
+    {
+      "participantId": "P05",
+      "totalPoints": 4,
+      "hits": 4,
+      "perfectGroups": 0,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-14T01:40:49.757426-05:00",
+      "position": 7
+    },
+    {
+      "participantId": "P06",
+      "totalPoints": 4,
+      "hits": 4,
+      "perfectGroups": 0,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-14T01:40:49.757426-05:00",
+      "position": 7
+    },
+    {
+      "participantId": "P08",
+      "totalPoints": 4,
+      "hits": 4,
+      "perfectGroups": 0,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-14T01:40:49.757426-05:00",
+      "position": 7
+    },
+    {
+      "participantId": "P04",
+      "totalPoints": 2,
+      "hits": 2,
+      "perfectGroups": 0,
+      "movement": 0,
+      "isTied": false,
+      "updatedAt": "2026-06-14T01:40:49.757426-05:00",
+      "position": 10
+    }
+  ]
+}

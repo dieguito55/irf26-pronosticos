@@ -1,0 +1,182 @@
+[
+  {
+    "id": "P01",
+    "name": "Eduardo F.",
+    "predictions": {
+      "A": ["México", "República de Corea"],
+      "B": ["Canadá", "Bosnia y Herzegovina"],
+      "C": ["Brasil", "Marruecos"],
+      "D": ["Estados Unidos", "Paraguay"],
+      "E": ["Alemania", "Ecuador"],
+      "F": ["Países Bajos", "Japón"],
+      "G": ["Bélgica", "Irán"],
+      "H": ["España", "Uruguay"],
+      "I": ["Francia", "Noruega"],
+      "J": ["Argentina", "Argelia"],
+      "K": ["Portugal", "Colombia"],
+      "L": ["Inglaterra", "Ghana"]
+    }
+  },
+  {
+    "id": "P02",
+    "name": "Franz F.",
+    "predictions": {
+      "A": ["México", "República de Corea"],
+      "B": ["Canadá", "Suiza"],
+      "C": ["Brasil", "Marruecos"],
+      "D": ["Estados Unidos", "Paraguay"],
+      "E": ["Alemania", "Costa de Marfil"],
+      "F": ["Países Bajos", "Japón"],
+      "G": ["Bélgica", "Irán"],
+      "H": ["España", "Uruguay"],
+      "I": ["Francia", "Noruega"],
+      "J": ["Argentina", "Argelia"],
+      "K": ["Portugal", "Colombia"],
+      "L": ["Inglaterra", "Croacia"]
+    }
+  },
+  {
+    "id": "P03",
+    "name": "Kevin H.",
+    "predictions": {
+      "A": ["México", "República de Corea"],
+      "B": ["Canadá", "Suiza"],
+      "C": ["Brasil", "Marruecos"],
+      "D": ["Estados Unidos", "Turquía"],
+      "E": ["Alemania", "Ecuador"],
+      "F": ["Países Bajos", "Japón"],
+      "G": ["Bélgica", "Irán"],
+      "H": ["España", "Uruguay"],
+      "I": ["Francia", "Noruega"],
+      "J": ["Argentina", "Austria"],
+      "K": ["Portugal", "Colombia"],
+      "L": ["Inglaterra", "Croacia"]
+    }
+  },
+  {
+    "id": "P04",
+    "name": "Mónica G.",
+    "predictions": {
+      "A": ["Sudáfrica", "República de Corea"],
+      "B": ["Qatar", "Suiza"],
+      "C": ["Brasil", "Marruecos"],
+      "D": ["Paraguay", "Turquía"],
+      "E": ["Alemania", "Ecuador"],
+      "F": ["Países Bajos", "Japón"],
+      "G": ["Bélgica", "Egipto"],
+      "H": ["España", "Uruguay"],
+      "I": ["Francia", "Noruega"],
+      "J": ["Argentina", "Argelia"],
+      "K": ["Portugal", "Colombia"],
+      "L": ["Inglaterra", "Ghana"]
+    }
+  },
+  {
+    "id": "P05",
+    "name": "Stiff M.",
+    "predictions": {
+      "A": ["México", "República Checa"],
+      "B": ["Canadá", "Suiza"],
+      "C": ["Brasil", "Marruecos"],
+      "D": ["Estados Unidos", "Paraguay"],
+      "E": ["Alemania", "Ecuador"],
+      "F": ["Países Bajos", "Japón"],
+      "G": ["Bélgica", "Egipto"],
+      "H": ["España", "Uruguay"],
+      "I": ["Francia", "Senegal"],
+      "J": ["Argentina", "Austria"],
+      "K": ["Portugal", "Colombia"],
+      "L": ["Inglaterra", "Croacia"]
+    }
+  },
+  {
+    "id": "P06",
+    "name": "Hans",
+    "predictions": {
+      "A": ["México", "República Checa"],
+      "B": ["Bosnia y Herzegovina", "Suiza"],
+      "C": ["Brasil", "Marruecos"],
+      "D": ["Estados Unidos", "Paraguay"],
+      "E": ["Alemania", "Ecuador"],
+      "F": ["Países Bajos", "Japón"],
+      "G": ["Bélgica", "Egipto"],
+      "H": ["España", "Uruguay"],
+      "I": ["Francia", "Senegal"],
+      "J": ["Argentina", "Austria"],
+      "K": ["Portugal", "Colombia"],
+      "L": ["Inglaterra", "Croacia"]
+    }
+  },
+  {
+    "id": "P07",
+    "name": "Rosy A.",
+    "predictions": {
+      "A": ["México", "República de Corea"],
+      "B": ["Canadá", "Bosnia y Herzegovina"],
+      "C": ["Brasil", "Marruecos"],
+      "D": ["Paraguay", "Turquía"],
+      "E": ["Alemania", "Ecuador"],
+      "F": ["Países Bajos", "Japón"],
+      "G": ["Egipto", "Nueva Zelanda"],
+      "H": ["España", "Uruguay"],
+      "I": ["Francia", "Noruega"],
+      "J": ["Argentina", "Argelia"],
+      "K": ["Portugal", "Colombia"],
+      "L": ["Inglaterra", "Panamá"]
+    }
+  },
+  {
+    "id": "P08",
+    "name": "Keytlin",
+    "predictions": {
+      "A": ["México", "Sudáfrica"],
+      "B": ["Canadá", "Qatar"],
+      "C": ["Brasil", "Haití"],
+      "D": ["Paraguay", "Australia"],
+      "E": ["Alemania", "Ecuador"],
+      "F": ["Países Bajos", "Túnez"],
+      "G": ["Bélgica", "Egipto"],
+      "H": ["España", "Uruguay"],
+      "I": ["Francia", "Noruega"],
+      "J": ["Argentina", "Austria"],
+      "K": ["Portugal", "Colombia"],
+      "L": ["Inglaterra", "Panamá"]
+    }
+  },
+  {
+    "id": "P09",
+    "name": "Manuel B.",
+    "predictions": {
+      "A": ["México", "República de Corea"],
+      "B": ["Canadá", "Suiza"],
+      "C": ["Brasil", "Marruecos"],
+      "D": ["Estados Unidos", "Paraguay"],
+      "E": ["Alemania", "Ecuador"],
+      "F": ["Países Bajos", "Japón"],
+      "G": ["Bélgica", "Egipto"],
+      "H": ["España", "Uruguay"],
+      "I": ["Francia", "Noruega"],
+      "J": ["Argentina", "Argelia"],
+      "K": ["Portugal", "Colombia"],
+      "L": ["Inglaterra", "Croacia"]
+    }
+  },
+  {
+    "id": "P10",
+    "name": "Soledad R.",
+    "predictions": {
+      "A": ["México", "República de Corea"],
+      "B": ["Canadá", "Bosnia y Herzegovina"],
+      "C": ["Brasil", "Marruecos"],
+      "D": ["Estados Unidos", "Paraguay"],
+      "E": ["Alemania", "Costa de Marfil"],
+      "F": ["Países Bajos", "Japón"],
+      "G": ["Bélgica", "Irán"],
+      "H": ["España", "Arabia Saudita"],
+      "I": ["Francia", "Noruega"],
+      "J": ["Argentina", "Austria"],
+      "K": ["Portugal", "Colombia"],
+      "L": ["Inglaterra", "Ghana"]
+    }
+  }
+]
