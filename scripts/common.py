@@ -13,10 +13,15 @@ GROUP_IDS = tuple("ABCDEFGHIJKL")
 PERU_TZ = ZoneInfo("America/Lima")
 
 TEAM_ALIASES = {
+    "Mexico": "México",
+    "South Africa": "Sudáfrica",
     "Korea Republic": "República de Corea",
     "South Korea": "República de Corea",
     "Czechia": "República Checa",
     "Czech Republic": "República Checa",
+    "Canada": "Canadá",
+    "Switzerland": "Suiza",
+    "Bosnia & Herzegovina": "Bosnia y Herzegovina",
     "USA": "Estados Unidos",
     "United States": "Estados Unidos",
     "Ivory Coast": "Costa de Marfil",

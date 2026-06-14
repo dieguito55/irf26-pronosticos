@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-import os
+import json
 import urllib.error
 import urllib.request
 from abc import ABC, abstractmethod
@@ -11,6 +11,8 @@ from calculate_standings import calculate_group_standings
 from common import DATA_DIR, Match, now_peru, read_json, write_json
 from validate_data import validate_participants, validate_standings
 
+OPENFOOTBALL_RESULTS_URL = "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json"
+
 
 class FootballDataProvider(ABC):
     @abstractmethod
@@ -18,29 +20,59 @@ class FootballDataProvider(ABC):
         raise NotImplementedError
 
 
-class ApiFootballDataProvider(FootballDataProvider):
-    def __init__(self) -> None:
-        self.url = os.getenv("FOOTBALL_API_URL", "")
-        self.token = os.getenv("FOOTBALL_API_TOKEN", "")
-        self.competition_id = os.getenv("COMPETITION_ID", "")
-        self.season = os.getenv("SEASON", "2026")
-
+class OpenFootballDataProvider(FootballDataProvider):
     def fetch_matches(self) -> list[Match]:
-        if not self.url or not self.token:
-            raise RuntimeError("FOOTBALL_API_URL y FOOTBALL_API_TOKEN son requeridos para consultar API.")
-
         request = urllib.request.Request(
-            f"{self.url}?competition={self.competition_id}&season={self.season}",
-            headers={"Authorization": f"Bearer {self.token}", "Accept": "application/json"},
+            OPENFOOTBALL_RESULTS_URL,
+            headers={
+                "Accept": "application/json",
+                "User-Agent": "irf26-pronosticos/1.0 (+https://github.com/dieguito55/irf26-pronosticos)",
+            },
         )
         with urllib.request.urlopen(request, timeout=30) as response:
             payload = response.read().decode("utf-8")
 
-        import json
-
         data: dict[str, Any] = json.loads(payload)
-        raw_matches = data.get("matches", data.get("data", []))
-        return [Match.from_payload(item) for item in raw_matches]
+        matches = parse_openfootball_matches(data)
+        print(f"Fuente publica: {OPENFOOTBALL_RESULTS_URL}")
+        print(f"Partidos finalizados de fase de grupos encontrados: {len(matches)}")
+        for match in matches:
+            print(
+                f"- Grupo {match.group}: {match.home_team} {match.home_score}-"
+                f"{match.away_score} {match.away_team}"
+            )
+        return matches
+
+
+def parse_openfootball_matches(data: dict[str, Any]) -> list[Match]:
+    matches: list[Match] = []
+
+    for item in data.get("matches", []):
+        group = str(item.get("group", ""))
+        if not group.startswith("Group "):
+            continue
+
+        score = item.get("score")
+        full_time_score = score.get("ft") if isinstance(score, dict) else None
+        if not isinstance(full_time_score, list) or len(full_time_score) < 2:
+            continue
+
+        matches.append(
+            Match.from_payload(
+                {
+                    "group": group.replace("Group ", ""),
+                    "homeTeam": item.get("team1", ""),
+                    "awayTeam": item.get("team2", ""),
+                    "homeScore": full_time_score[0],
+                    "awayScore": full_time_score[1],
+                    "status": "finished",
+                    "stage": "group",
+                    "round": str(item.get("round", "1")).replace("Matchday", "").strip() or 1,
+                }
+            )
+        )
+
+    return matches
 
 
 class ManualFallbackProvider(FootballDataProvider):
@@ -81,11 +113,11 @@ def update_tournament(matches: list[Match], existing: dict[str, Any]) -> dict[st
 
 
 def main() -> None:
-    provider: FootballDataProvider = ApiFootballDataProvider()
+    provider: FootballDataProvider = OpenFootballDataProvider()
     try:
         matches = provider.fetch_matches()
         if not matches:
-            raise RuntimeError("La API no devolvió partidos válidos.")
+            raise RuntimeError("La fuente publica no devolvio partidos finalizados.")
     except (RuntimeError, urllib.error.URLError, TimeoutError, ValueError) as error:
         print(f"Usando fallback manual: {error}")
         matches = ManualFallbackProvider().fetch_matches()

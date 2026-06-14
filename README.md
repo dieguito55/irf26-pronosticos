@@ -1,29 +1,21 @@
 # Polla Mundialista IRF26
 
-Plataforma pública y estática para seguir los pronósticos de la fase de grupos del Mundial 2026 dentro del contexto IRF26. Muestra ranking, podio provisional, detalle por participante, tablas A-L, rondas, sistema de puntuación y metadatos de actualización nocturna.
+Plataforma publica y estatica para seguir los pronosticos de la fase de grupos del Mundial 2026. Muestra ranking, podio provisional, detalle por participante, tablas A-L, rondas, sistema de puntuacion y metadatos de actualizacion nocturna.
 
-## Tecnologías
+## Tecnologias
 
 - React + Vite + TypeScript estricto.
 - Tailwind CSS para el sistema visual.
-- Framer Motion para animaciones sutiles.
-- Lucide React para iconografía.
-- JSON públicos en `public/data`.
-- Python estándar para actualización, validación y cálculo.
+- Framer Motion para animaciones.
+- Lucide React para iconografia.
+- JSON publicos en `public/data`.
+- Python estandar para actualizacion, validacion y calculo.
 - GitHub Actions + GitHub Pages.
 
-## Instalación
+## Comandos locales
 
 ```bash
 npm install
-npm run dev
-```
-
-La app quedará disponible en la URL local que indique Vite.
-
-## Comandos
-
-```bash
 npm run dev
 npm run build
 npm run lint
@@ -32,44 +24,54 @@ python scripts/validate_data.py
 python scripts/update_results.py
 ```
 
-## Datos públicos
+## Datos publicos
 
-Los participantes se editan en `public/data/participants.json`. Cada participante debe tener 12 grupos y 2 selecciones por grupo. No agregues correos, teléfonos, comprobantes, marcas de tiempo originales ni enlaces privados.
+Los participantes se editan en `public/data/participants.json`. Cada participante debe tener 12 grupos y 2 selecciones por grupo. No agregues correos, telefonos, comprobantes, informacion bancaria ni enlaces privados.
 
 Archivos principales:
 
-- `participants.json`: nombres públicos y pronósticos.
-- `standings.json`: clasificación provisional por grupo.
-- `ranking.json`: ranking público.
-- `tournament.json`: estado de torneo, rondas y sincronización.
-- `manual-results.json`: fallback manual cuando la API no entregue datos.
+- `participants.json`: nombres publicos y pronosticos.
+- `standings.json`: clasificacion provisional por grupo.
+- `ranking.json`: ranking publico.
+- `tournament.json`: estado del torneo, rondas y sincronizacion.
+- `manual-results.json`: fallback manual cuando la fuente publica no entregue datos.
 
-## API deportiva
+## Fuente publica de resultados
 
-Configura variables en `.env` o en GitHub Actions:
+La actualizacion automatica usa el JSON publico de OpenFootball:
 
-```env
-FOOTBALL_API_URL=
-FOOTBALL_API_TOKEN=
-COMPETITION_ID=
-SEASON=2026
+```text
+https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json
 ```
 
-La clave debe guardarse en GitHub Settings -> Secrets and variables -> Actions -> `FOOTBALL_API_TOKEN`. No se incluye ninguna clave en el código.
+No requiere `.env`, token, clave ni credenciales.
 
-## Actualización manual
+## Actualizacion automatica
 
-Si la API todavía no devuelve datos, coloca partidos finalizados en `public/data/manual-results.json` con campos como:
+`.github/workflows/update-results.yml` corre todos los dias a las 00:35 usando la zona horaria `America/Lima`.
+
+El flujo hace esto:
+
+1. Valida los JSON actuales.
+2. Ejecuta `python scripts/update_results.py`.
+3. Descarga resultados finalizados de fase de grupos desde OpenFootball.
+4. Recalcula `standings.json`, `ranking.json` y `tournament.json`.
+5. Hace commit solo si existen cambios.
+6. Dispara el workflow de publicacion de GitHub Pages.
+
+## Actualizacion manual
+
+Si la fuente publica todavia no tiene un marcador, puedes colocar partidos finalizados en `public/data/manual-results.json` con este formato:
 
 ```json
 {
   "matches": [
     {
       "group": "A",
-      "homeTeam": "México",
-      "awayTeam": "República de Corea",
+      "homeTeam": "Mexico",
+      "awayTeam": "South Africa",
       "homeScore": 2,
-      "awayScore": 1,
+      "awayScore": 0,
       "status": "finished",
       "stage": "group",
       "round": 1
@@ -86,29 +88,11 @@ python scripts/update_results.py
 
 ## GitHub Pages
 
-El workflow `deploy.yml` instala dependencias, ejecuta lint, build y pruebas, y publica `dist` en GitHub Pages. En el repositorio activa Pages usando GitHub Actions como fuente.
+El workflow `deploy.yml` instala dependencias, ejecuta lint, build y pruebas, y publica `dist` en GitHub Pages. En el repositorio, Pages debe estar configurado con GitHub Actions como fuente.
 
-## Actualización automática
-
-`update-results.yml` corre todos los días a las 00:35 usando la zona horaria `America/Lima`. Valida datos, consulta API o fallback manual, recalcula ranking y hace commit solo si existen cambios con:
-
-```text
-chore: actualizar resultados y ranking
-```
-
-## Reemplazar logo e imágenes
-
-- Logo: reemplaza `public/assets/irf26-logo.svg` por el archivo oficial sin cambiar su ruta.
-- Portada: reemplaza `public/assets/stadium.svg` por una imagen propia o libre de uso comercial y actualiza créditos si corresponde.
-- Patrón: reemplaza `public/assets/football-pattern.svg` si quieres una textura distinta.
-
-## Privacidad
-
-Esta plataforma muestra únicamente información pública de seguimiento de pronósticos. No debe almacenar correos electrónicos, números telefónicos, comprobantes, información bancaria ni enlaces privados.
-
-## Solución de errores comunes
+## Solucion de errores comunes
 
 - Si falla la carga de datos, ejecuta `python scripts/validate_data.py`.
 - Si no aparecen cambios de ranking, revisa que `standings.json` tenga `topTwo` por cada grupo.
-- Si GitHub Actions no consulta la API, confirma que `FOOTBALL_API_TOKEN` esté en Secrets y no en el repositorio.
-- Si Pages muestra rutas rotas, verifica que `vite.config.ts` mantenga `base: "/irf26-pronosticos/"` y que el repositorio tenga exactamente ese nombre.
+- Si GitHub Actions no actualiza resultados, revisa si OpenFootball ya publico el marcador del partido.
+- Si Pages muestra rutas rotas, verifica que `vite.config.ts` mantenga `base: "/irf26-pronosticos/"`.
