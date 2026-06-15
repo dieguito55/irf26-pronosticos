@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T23:40:28.444973+00:00",
+  "lastUpdated": "2026-06-15T11:30:36.686962+00:00",
   "timezone": "America/Lima",
   "status": "in_progress",
   "groups": [
@@ -257,25 +257,25 @@
         },
         {
           "team": "Costa de Marfil",
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 0,
+          "goalsFor": 1,
           "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0,
+          "goalDifference": 1,
+          "points": 3,
           "position": 2
         },
         {
           "team": "Ecuador",
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
+          "goalsAgainst": 1,
+          "goalDifference": -1,
           "points": 0,
           "position": 3
         },
@@ -297,24 +297,24 @@
       "id": "F",
       "name": "Grupo F",
       "topTwo": [
-        "Japón",
-        "Países Bajos"
+        "Suecia",
+        "Japón"
       ],
       "table": [
         {
-          "team": "Japón",
+          "team": "Suecia",
           "played": 1,
-          "won": 0,
-          "drawn": 1,
+          "won": 1,
+          "drawn": 0,
           "lost": 0,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
-          "goalDifference": 0,
-          "points": 1,
+          "goalsFor": 5,
+          "goalsAgainst": 1,
+          "goalDifference": 4,
+          "points": 3,
           "position": 1
         },
         {
-          "team": "Países Bajos",
+          "team": "Japón",
           "played": 1,
           "won": 0,
           "drawn": 1,
@@ -326,26 +326,26 @@
           "position": 2
         },
         {
-          "team": "Suecia",
-          "played": 0,
+          "team": "Países Bajos",
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
           "goalDifference": 0,
-          "points": 0,
+          "points": 1,
           "position": 3
         },
         {
           "team": "Túnez",
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 5,
+          "goalDifference": -4,
           "points": 0,
           "position": 4
         }
