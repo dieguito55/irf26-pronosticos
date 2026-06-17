@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T00:51:41.399105-05:00",
+  "lastUpdated": "2026-06-17T05:15:21.524782-05:00",
   "status": "provisional",
   "entries": [
     {
@@ -9,7 +9,7 @@
       "perfectGroups": 5,
       "movement": 0,
       "isTied": false,
-      "updatedAt": "2026-06-17T00:51:41.399105-05:00",
+      "updatedAt": "2026-06-17T05:15:21.524782-05:00",
       "position": 1
     },
     {
@@ -19,7 +19,7 @@
       "perfectGroups": 3,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-17T00:51:41.399105-05:00",
+      "updatedAt": "2026-06-17T05:15:21.524782-05:00",
       "position": 2
     },
     {
@@ -29,7 +29,7 @@
       "perfectGroups": 3,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-17T00:51:41.399105-05:00",
+      "updatedAt": "2026-06-17T05:15:21.524782-05:00",
       "position": 2
     },
     {
@@ -39,7 +39,7 @@
       "perfectGroups": 3,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-17T00:51:41.399105-05:00",
+      "updatedAt": "2026-06-17T05:15:21.524782-05:00",
       "position": 2
     },
     {
@@ -49,7 +49,7 @@
       "perfectGroups": 3,
       "movement": 0,
       "isTied": false,
-      "updatedAt": "2026-06-17T00:51:41.399105-05:00",
+      "updatedAt": "2026-06-17T05:15:21.524782-05:00",
       "position": 5
     },
     {
@@ -59,7 +59,7 @@
       "perfectGroups": 2,
       "movement": 0,
       "isTied": false,
-      "updatedAt": "2026-06-17T00:51:41.399105-05:00",
+      "updatedAt": "2026-06-17T05:15:21.524782-05:00",
       "position": 6
     },
     {
@@ -69,7 +69,7 @@
       "perfectGroups": 2,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-17T00:51:41.399105-05:00",
+      "updatedAt": "2026-06-17T05:15:21.524782-05:00",
       "position": 7
     },
     {
@@ -79,7 +79,7 @@
       "perfectGroups": 1,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-17T00:51:41.399105-05:00",
+      "updatedAt": "2026-06-17T05:15:21.524782-05:00",
       "position": 7
     },
     {
@@ -89,7 +89,7 @@
       "perfectGroups": 1,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-17T00:51:41.399105-05:00",
+      "updatedAt": "2026-06-17T05:15:21.524782-05:00",
       "position": 7
     },
     {
@@ -99,7 +99,7 @@
       "perfectGroups": 1,
       "movement": 0,
       "isTied": false,
-      "updatedAt": "2026-06-17T00:51:41.399105-05:00",
+      "updatedAt": "2026-06-17T05:15:21.524782-05:00",
       "position": 10
     }
   ]
