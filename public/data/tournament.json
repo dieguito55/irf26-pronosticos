@@ -5,13 +5,13 @@
   "status": "in_progress",
   "currentRound": 2,
   "totalRounds": 3,
-  "processedMatches": 36,
+  "processedMatches": 40,
   "totalMatches": 72,
   "participants": 10,
   "groups": 12,
   "maxPoints": 24,
-  "lastUpdated": "2026-06-21T09:09:15.052626+00:00",
-  "lastSuccessfulUpdate": "2026-06-21T04:09:15.052626-05:00",
+  "lastUpdated": "2026-06-22T11:15:08.003237+00:00",
+  "lastSuccessfulUpdate": "2026-06-22T06:15:08.003237-05:00",
   "nextUpdate": "2026-06-15T00:35:00-05:00",
   "updateStatus": "updated",
   "rounds": [
@@ -32,7 +32,7 @@
       "status": "in_progress",
       "startsAt": "2026-06-18",
       "endsAt": "2026-06-24",
-      "processedMatches": 12,
+      "processedMatches": 16,
       "totalMatches": 24
     },
     {

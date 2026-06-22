@@ -1,105 +1,105 @@
 {
-  "lastUpdated": "2026-06-21T04:09:15.051276-05:00",
+  "lastUpdated": "2026-06-22T06:15:08.001471-05:00",
   "status": "provisional",
   "entries": [
+    {
+      "participantId": "P02",
+      "totalPoints": 20,
+      "hits": 20,
+      "perfectGroups": 8,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-22T06:15:08.001471-05:00",
+      "position": 1
+    },
+    {
+      "participantId": "P03",
+      "totalPoints": 20,
+      "hits": 20,
+      "perfectGroups": 8,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-22T06:15:08.001471-05:00",
+      "position": 1
+    },
     {
       "participantId": "P10",
       "totalPoints": 20,
       "hits": 20,
       "perfectGroups": 8,
       "movement": 0,
-      "isTied": false,
-      "updatedAt": "2026-06-21T04:09:15.051276-05:00",
+      "isTied": true,
+      "updatedAt": "2026-06-22T06:15:08.001471-05:00",
       "position": 1
     },
     {
-      "participantId": "P02",
-      "totalPoints": 19,
-      "hits": 19,
-      "perfectGroups": 7,
-      "movement": 0,
-      "isTied": true,
-      "updatedAt": "2026-06-21T04:09:15.051276-05:00",
-      "position": 2
-    },
-    {
-      "participantId": "P03",
-      "totalPoints": 19,
-      "hits": 19,
-      "perfectGroups": 7,
-      "movement": 0,
-      "isTied": true,
-      "updatedAt": "2026-06-21T04:09:15.051276-05:00",
-      "position": 2
-    },
-    {
       "participantId": "P01",
+      "totalPoints": 19,
+      "hits": 19,
+      "perfectGroups": 7,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-22T06:15:08.001471-05:00",
+      "position": 4
+    },
+    {
+      "participantId": "P09",
+      "totalPoints": 19,
+      "hits": 19,
+      "perfectGroups": 7,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-22T06:15:08.001471-05:00",
+      "position": 4
+    },
+    {
+      "participantId": "P05",
       "totalPoints": 18,
       "hits": 18,
       "perfectGroups": 6,
       "movement": 0,
       "isTied": false,
-      "updatedAt": "2026-06-21T04:09:15.051276-05:00",
-      "position": 4
-    },
-    {
-      "participantId": "P09",
-      "totalPoints": 17,
-      "hits": 17,
-      "perfectGroups": 6,
-      "movement": 0,
-      "isTied": false,
-      "updatedAt": "2026-06-21T04:09:15.051276-05:00",
-      "position": 5
-    },
-    {
-      "participantId": "P05",
-      "totalPoints": 16,
-      "hits": 16,
-      "perfectGroups": 5,
-      "movement": 0,
-      "isTied": true,
-      "updatedAt": "2026-06-21T04:09:15.051276-05:00",
-      "position": 6
-    },
-    {
-      "participantId": "P07",
-      "totalPoints": 16,
-      "hits": 16,
-      "perfectGroups": 5,
-      "movement": 0,
-      "isTied": true,
-      "updatedAt": "2026-06-21T04:09:15.051276-05:00",
+      "updatedAt": "2026-06-22T06:15:08.001471-05:00",
       "position": 6
     },
     {
       "participantId": "P04",
-      "totalPoints": 15,
-      "hits": 15,
-      "perfectGroups": 5,
+      "totalPoints": 17,
+      "hits": 17,
+      "perfectGroups": 6,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-21T04:09:15.051276-05:00",
-      "position": 8
+      "updatedAt": "2026-06-22T06:15:08.001471-05:00",
+      "position": 7
+    },
+    {
+      "participantId": "P07",
+      "totalPoints": 17,
+      "hits": 17,
+      "perfectGroups": 6,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-22T06:15:08.001471-05:00",
+      "position": 7
     },
     {
       "participantId": "P06",
-      "totalPoints": 15,
-      "hits": 15,
-      "perfectGroups": 4,
+      "totalPoints": 17,
+      "hits": 17,
+      "perfectGroups": 5,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-21T04:09:15.051276-05:00",
-      "position": 8
+      "updatedAt": "2026-06-22T06:15:08.001471-05:00",
+      "position": 7
     },
     {
       "participantId": "P08",
-      "totalPoints": 14,
-      "hits": 14,
-      "perfectGroups": 3,
+      "totalPoints": 16,
+      "hits": 16,
+      "perfectGroups": 4,
       "movement": 0,
       "isTied": false,
-      "updatedAt": "2026-06-21T04:09:15.051276-05:00",
+      "updatedAt": "2026-06-22T06:15:08.001471-05:00",
       "position": 10
     }
   ]
