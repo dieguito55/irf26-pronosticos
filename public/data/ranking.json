@@ -1,46 +1,36 @@
 {
-  "lastUpdated": "2026-06-26T03:39:04.767165-05:00",
+  "lastUpdated": "2026-06-27T03:10:05.756914-05:00",
   "status": "provisional",
   "entries": [
-    {
-      "participantId": "P02",
-      "totalPoints": 19,
-      "hits": 19,
-      "perfectGroups": 7,
-      "movement": 0,
-      "isTied": true,
-      "updatedAt": "2026-06-26T03:39:04.767165-05:00",
-      "position": 1
-    },
-    {
-      "participantId": "P03",
-      "totalPoints": 19,
-      "hits": 19,
-      "perfectGroups": 7,
-      "movement": 0,
-      "isTied": true,
-      "updatedAt": "2026-06-26T03:39:04.767165-05:00",
-      "position": 1
-    },
     {
       "participantId": "P10",
       "totalPoints": 19,
       "hits": 19,
       "perfectGroups": 7,
       "movement": 0,
-      "isTied": true,
-      "updatedAt": "2026-06-26T03:39:04.767165-05:00",
+      "isTied": false,
+      "updatedAt": "2026-06-27T03:10:05.756914-05:00",
       "position": 1
     },
     {
-      "participantId": "P01",
+      "participantId": "P02",
       "totalPoints": 18,
       "hits": 18,
       "perfectGroups": 6,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-26T03:39:04.767165-05:00",
-      "position": 4
+      "updatedAt": "2026-06-27T03:10:05.756914-05:00",
+      "position": 2
+    },
+    {
+      "participantId": "P03",
+      "totalPoints": 18,
+      "hits": 18,
+      "perfectGroups": 6,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-27T03:10:05.756914-05:00",
+      "position": 2
     },
     {
       "participantId": "P05",
@@ -49,8 +39,8 @@
       "perfectGroups": 6,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-26T03:39:04.767165-05:00",
-      "position": 4
+      "updatedAt": "2026-06-27T03:10:05.756914-05:00",
+      "position": 2
     },
     {
       "participantId": "P09",
@@ -59,8 +49,8 @@
       "perfectGroups": 6,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-26T03:39:04.767165-05:00",
-      "position": 4
+      "updatedAt": "2026-06-27T03:10:05.756914-05:00",
+      "position": 2
     },
     {
       "participantId": "P04",
@@ -69,8 +59,18 @@
       "perfectGroups": 6,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-26T03:39:04.767165-05:00",
-      "position": 7
+      "updatedAt": "2026-06-27T03:10:05.756914-05:00",
+      "position": 6
+    },
+    {
+      "participantId": "P01",
+      "totalPoints": 17,
+      "hits": 17,
+      "perfectGroups": 5,
+      "movement": 0,
+      "isTied": true,
+      "updatedAt": "2026-06-27T03:10:05.756914-05:00",
+      "position": 6
     },
     {
       "participantId": "P06",
@@ -79,8 +79,8 @@
       "perfectGroups": 5,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-26T03:39:04.767165-05:00",
-      "position": 7
+      "updatedAt": "2026-06-27T03:10:05.756914-05:00",
+      "position": 6
     },
     {
       "participantId": "P08",
@@ -89,17 +89,17 @@
       "perfectGroups": 5,
       "movement": 0,
       "isTied": true,
-      "updatedAt": "2026-06-26T03:39:04.767165-05:00",
-      "position": 7
+      "updatedAt": "2026-06-27T03:10:05.756914-05:00",
+      "position": 6
     },
     {
       "participantId": "P07",
-      "totalPoints": 16,
-      "hits": 16,
-      "perfectGroups": 5,
+      "totalPoints": 15,
+      "hits": 15,
+      "perfectGroups": 4,
       "movement": 0,
       "isTied": false,
-      "updatedAt": "2026-06-26T03:39:04.767165-05:00",
+      "updatedAt": "2026-06-27T03:10:05.756914-05:00",
       "position": 10
     }
   ]
